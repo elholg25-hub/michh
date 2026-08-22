@@ -69,6 +69,21 @@
         padding: 0;
       }
       .mail:hover { border: 0; }
+            .note {
+        margin: 3rem 0 0;
+        max-width: 36rem;
+        color: var(--muted);
+        font-size: 0.82rem;
+        line-height: 1.45;
+      }
+      .note a {
+        border: 0;
+        padding: 0;
+        color: var(--muted);
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+      }
+      .note a:hover { color: var(--green); }
     </style>
   </head>
   <body>
@@ -98,6 +113,7 @@
       </div>
 
       <a class="mail" href="mailto:m.horacek@hey.com">m.horacek@hey.com</a>
+            <p class="note">inspired by omarchy. thanks to dhh and the team @ <a href="https://omarchy.org">omarchy</a> </p>
     </main>
   </body>
 </html>
