@@ -28,7 +28,7 @@
         line-height: 1.45;
       }
       main {
-        max-width: 64rem;
+        max-width: 72rem;
         margin: 0 auto;
         padding: 3.5rem 1.25rem 4rem;
         text-align: center;
@@ -37,9 +37,9 @@
         margin: 0 auto 2rem;
         color: var(--green);
         font-family: "JetBrains Mono", ui-monospace, monospace;
-        font-size: min(2.2vw, 1.85rem);
+        font-size: clamp(0.42rem, 1.45vw, 1.1rem);
         font-weight: 400;
-        line-height: 1.12;
+        line-height: 1.09375;
         letter-spacing: -0.0425em;
         max-width: 100%;
         overflow: hidden;
@@ -110,19 +110,22 @@
       @media (min-width: 64em) {
         html { font-size: 20px; }
         main { padding: 5rem 3rem; }
-        pre { font-size: 1.85rem; }
+        pre { font-size: 1.05rem; }
       }
     </style>
   </head>
   <body>
     <main>
       <pre>
-███╗   ███╗██╗ ██████╗██╗  ██╗██╗  ██╗
-████╗ ████║██║██╔════╝██║  ██║██║  ██║
-██╔████╔██║██║██║     ███████║███████║
-██║╚██╔╝██║██║██║     ██╔══██║██╔══██║
-██║ ╚═╝ ██║██║╚██████╗██║  ██║██║  ██║
-╚═╝     ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝
+      ▄▄▄
+ ▄███████████▄    ▄███████   ▄███████    ▄█   █▄      ▄█   █▄
+███   ███   ███     ███     ███   ███   ███   ███    ███   ███
+███   ███   ███     ███     ███   █▀    ███   ███    ███   ███
+███   ███   ███     ███     ███        ▄███▄▄▄███▄  ▄███▄▄▄███▄
+███   ███   ███     ███     ███        ▀███▀▀▀███   ▀███▀▀▀███
+███   ███   ███     ███     ███   █▄    ███   ███    ███   ███
+███   ███   ███     ███     ███   ███   ███   ███    ███   ███
+ ▀█   ███   █▀    ▀███████  ███████▀    ███   █▀     ███   █▀
       </pre>
 
       <h1>Michael Horacek</h1>
