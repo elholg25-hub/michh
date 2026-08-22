@@ -33,13 +33,17 @@
         padding: 3.5rem 1.25rem 4rem;
         text-align: center;
       }
-      .mark {
-        margin: 0 0 1.4rem;
+      pre {
+        margin: 0 auto 2rem;
         color: var(--green);
-        font-size: clamp(3.25rem, 18vw, 8.5rem);
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        line-height: 0.85;
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: min(2.2vw, 1.85rem);
+        font-weight: 400;
+        line-height: 1.12;
+        letter-spacing: -0.0425em;
+        max-width: 100%;
+        overflow: hidden;
+        white-space: pre;
       }
       h1 {
         margin: 0 0 0.7rem;
@@ -105,14 +109,21 @@
       .note a:hover { color: var(--green); }
       @media (min-width: 64em) {
         html { font-size: 20px; }
-        main { padding: 5rem 3rem 5rem; }
-        .mark { font-size: clamp(6rem, 12vw, 9.5rem); }
+        main { padding: 5rem 3rem; }
+        pre { font-size: 1.85rem; }
       }
     </style>
   </head>
   <body>
     <main>
-      <p class="mark">MICHH</p>
+      <pre>
+███╗   ███╗██╗ ██████╗██╗  ██╗██╗  ██╗
+████╗ ████║██║██╔════╝██║  ██║██║  ██║
+██╔████╔██║██║██║     ███████║███████║
+██║╚██╔╝██║██║██║     ██╔══██║██╔══██║
+██║ ╚═╝ ██║██║╚██████╗██║  ██║██║  ██║
+╚═╝     ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝
+      </pre>
 
       <h1>Michael Horacek</h1>
       <p class="lead">builder. operator. working on the next useful thing.</p>
