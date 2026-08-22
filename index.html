@@ -16,6 +16,7 @@
         --border: rgba(65, 72, 104, 0.8);
       }
       * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
       html, body {
         margin: 0;
         min-height: 100%;
@@ -23,12 +24,12 @@
         color: var(--fg);
         font-family: "JetBrains Mono", ui-monospace, monospace;
         font-size: clamp(0.9rem, 1.4vw, 1.05rem);
-        line-height: 1.6;
+        line-height: 1.65;
       }
       main {
         max-width: 52rem;
         margin: 0 auto;
-        padding: 12vh 1.5rem 4rem;
+        padding: 12vh 1.5rem 5rem;
       }
       pre {
         margin: 0 0 2rem;
@@ -37,9 +38,22 @@
         line-height: 1.15;
         overflow-x: auto;
       }
-      h1 { margin: 0 0 0.4rem; font-size: 1.15rem; font-weight: 600; }
-      p { margin: 0 0 1.5rem; color: var(--muted); max-width: 38rem; }
-      nav { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+      h1 {
+        margin: 0 0 0.4rem;
+        font-size: 1.15rem;
+        font-weight: 600;
+      }
+      .lead {
+        margin: 0 0 2rem;
+        color: var(--muted);
+        max-width: 38rem;
+      }
+      nav, .links, .mail-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        margin: 0 0 1.1rem;
+      }
       a {
         color: var(--fg);
         text-decoration: none;
@@ -48,6 +62,23 @@
         border-radius: 2px;
       }
       a:hover { border-color: var(--green); color: var(--green); }
+      .mail-wrap a {
+        color: var(--green);
+        border-color: transparent;
+        padding: 0;
+      }
+      .mail-wrap a:hover { border-color: transparent; }
+      section {
+        padding: 1.4rem 0 2rem;
+        border-top: 1px solid var(--border);
+      }
+      section:first-of-type { margin-top: 2.5rem; }
+      h2 {
+        margin: 0 0 0.7rem;
+        font-size: 1.05rem;
+        font-weight: 600;
+      }
+      p { margin: 0; color: var(--muted); max-width: 40rem; }
     </style>
   </head>
   <body>
@@ -60,12 +91,40 @@
 ██║ ╚═╝ ██║██║╚██████╗██║  ██║██║  ██║
 ╚═╝     ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝
       </pre>
+
       <h1>Michael Horacek</h1>
-      <p>Builder. Operator. Working on the next useful thing.</p>
+      <p class="lead">builder. operator. working on the next useful thing.
+      </p>foster original thinking. conformity is optional.
+
       <nav>
+        <a href="#me">Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#thoughts">Thoughts</a>
+      </nav>
+
+      <div class="links">
         <a href="https://x.com/elysianfields">X</a>
         <a href="https://github.com/elholg25-hub">GitHub</a>
-      </nav>
+      </div>
+
+      <p class="mail-wrap">
+        <a href="mailto:m.horacek@hey.com">m.horacek@hey.com</a>
+      </p>
+
+      <section id="me">
+        <h2>Me</h2>
+        <p>Short bio goes here.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Selected work goes here.</p>
+      </section>
+
+      <section id="thoughts">
+        <h2>Thoughts</h2>
+        <p>Notes go here.</p>
+      </section>
     </main>
   </body>
 </html>
