@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>michh.org</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #1a1b26;
+        --fg: #c0caf5;
+        --muted: #565f89;
+        --green: #9ece6a;
+        --border: rgba(65, 72, 104, 0.8);
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+        line-height: 1.6;
+      }
+      main {
+        max-width: 52rem;
+        margin: 0 auto;
+        padding: 12vh 1.5rem 4rem;
+      }
+      pre {
+        margin: 0 0 2rem;
+        color: var(--green);
+        font-size: clamp(0.45rem, 1.6vw, 0.8rem);
+        line-height: 1.15;
+        overflow-x: auto;
+      }
+      h1 { margin: 0 0 0.4rem; font-size: 1.15rem; font-weight: 600; }
+      p { margin: 0 0 1.5rem; color: var(--muted); max-width: 38rem; }
+      nav { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+      a {
+        color: var(--fg);
+        text-decoration: none;
+        border: 1px solid var(--border);
+        padding: 0.45rem 0.8rem;
+        border-radius: 2px;
+      }
+      a:hover { border-color: var(--green); color: var(--green); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <pre>
+███╗   ███╗██╗ ██████╗██╗  ██╗██╗  ██╗
+████╗ ████║██║██╔════╝██║  ██║██║  ██║
+██╔████╔██║██║██║     ███████║███████║
+██║╚██╔╝██║██║██║     ██╔══██║██╔══██║
+██║ ╚═╝ ██║██║╚██████╗██║  ██║██║  ██║
+╚═╝     ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝
+      </pre>
+      <h1>Michael Horacek</h1>
+      <p>Builder. Operator. Working on the next useful thing.</p>
+      <nav>
+        <a href="https://x.com/elysianfields">X</a>
+        <a href="https://github.com/elholg25-hub">GitHub</a>
+      </nav>
+    </main>
+  </body>
+</html>
