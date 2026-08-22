@@ -6,7 +6,7 @@
     <title>michh.org</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
       :root {
         --bg: #1a1b26;
@@ -57,19 +57,37 @@
       a {
         color: var(--fg);
         text-decoration: none;
-        border: 1px solid var(--border);
-        padding: 0.45rem 0.8rem;
-        border-radius: 2px;
       }
-      a:hover { border-color: var(--green); color: var(--green); }
+      nav a,
+      .links a {
+        display: inline-flex;
+        align-items: center;
+        height: 2.7em;
+        padding: 0 1em;
+        border: 0;
+        border-radius: 0.4em;
+        background: #7aa2f7;
+        color: #1a1b26;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        box-shadow:
+          0 1px 0 rgba(0,0,0,0.1),
+          0 0.35em 1em rgba(0,0,0,0.18);
+      }
+      nav a:hover,
+      .links a:hover {
+        background: #b4f9f8;
+        color: #1a1b26;
+      }
       .mail {
         display: inline-block;
         color: var(--green);
         border: 0;
         padding: 0;
       }
-      .mail:hover { border: 0; }
-            .note {
+      .mail:hover { border: 0; color: var(--green); }
+      .note {
         margin: 3rem 0 0;
         max-width: 36rem;
         color: var(--muted);
@@ -113,7 +131,8 @@
       </div>
 
       <a class="mail" href="mailto:m.horacek@hey.com">m.horacek@hey.com</a>
-            <p class="note">inspired by omarchy. thanks to <a href="https://github.com/dhh">dhh</a> and the team @ <a href="https://omarchy.org">omarchy</a> </p>
+
+      <p class="note">inspired by omarchy. thanks to <a href="https://github.com/dhh">dhh</a> and the team @ <a href="https://omarchy.org">omarchy</a></p>
     </main>
   </body>
 </html>
