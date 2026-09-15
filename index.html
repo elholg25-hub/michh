@@ -1,94 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Michael Horacek</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-      :root {
-        --fg: #1a1a1a;
-        --muted: #6b6b6b;
-        --bg: #fafaf7;
-        --accent: #0a7d4a;
-        --rule: #e6e4dd;
-      }
-      * { box-sizing: border-box; }
-      html, body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--fg);
-        font-family: Inter, Geist, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-        font-size: 16px;
-        line-height: 1.65;
-        -webkit-font-smoothing: antialiased;
-      }
-      main { padding: 160px 32px 140px; }
-      .content { max-width: 780px; margin: 0 auto; }
-      @media (max-width: 640px) {
-        main { padding: 96px 22px; }
-      }
-      h1 {
-        font-size: 3rem;
-        letter-spacing: -0.035em;
-        line-height: 1.02;
-        font-weight: 600;
-        margin: 0 0 0.55em;
-      }
-      h2 {
-        font-size: 1.35rem;
-        font-weight: 600;
-        letter-spacing: -0.015em;
-        margin: 3em 0 0.9em;
-        padding-bottom: 0.5em;
-        border-bottom: 1px solid var(--rule);
-      }
-      p {
-        margin: 0 0 1.1em;
-        color: #333;
-        max-width: 65ch;
-      }
-      .intro p {
-        font-size: 1.08rem;
-        color: #2a2a2a;
-      }
-      a {
-        color: var(--fg);
-        text-decoration: underline;
-        text-decoration-color: var(--accent);
-        text-decoration-thickness: 1.5px;
-        text-underline-offset: 3px;
-      }
-      a:hover { color: var(--accent); }
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.9rem 1.25rem;
-        margin: 2.2em 0 0;
-      }
-      .links p { margin: 0; }
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="content">
-        <h1>Michael Horacek</h1>
-        <div class="intro">
-          <p>Builder. Operator. Working on the next useful thing.</p>
-          <p>Foster original thinking. Conformity is optional.</p>
-        </div>
-        <div class="links">
-          <p><a href="https://x.com/elysianfields">X</a></p>
-          <p><a href="https://github.com/elholg25-hub">GitHub</a></p>
-          <p><a href="mailto:m.horacek@hey.com">m.horacek@hey.com</a></p>
-        </div>
-
-        <h2>Previous</h2>
-        <p>Founder of <a href="https://medudoc.com/en/">medudoc.com</a></p>
-        <p>Co-Founder of <a href="https://cereneo.ch/en/">cereneo.ch</a></p>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michael Horacek — MICHH</title>
+  <meta name="description" content="Michael Horacek. Founder of medudoc and co-founder of cereneo. Work, writing, and independent thinking.">
+  <meta property="og:title" content="Michael Horacek — MICHH">
+  <meta property="og:description" content="Work, writing, and independent thinking. The personal site of Michael Horacek.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://michh.org/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="MICHH home">michh</a>
+      <nav aria-label="Main navigation"><a href="thoughts.html">Writing</a><a href="projects.html">Work</a><a href="me.html">About</a></nav>
+    </header>
+    <main id="main">
+      <section class="intro-section" aria-labelledby="intro-title">
+        <h1 id="intro-title">Michael Horacek</h1>
+        <p>I’m Michael, founder of <a href="https://medudoc.com/en/">medudoc</a> and co-founder of <a href="https://cereneo.ch/en/">cereneo</a>.</p>
+        <p>This is where I share what I’m working on and what I’m learning along the way.</p>
+      </section>
+      <section class="content-section" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects &amp; interests</h2>
+        <p>Areas I’m exploring:</p>
+        <ul class="project-list">
+          <li><h3>Perimenopause</h3><p>Services and products for people navigating perimenopause.</p></li>
+          <li><h3>AI admin support for SMEs</h3><p>AI solutions to support administrative work in small and medium-sized businesses.</p></li>
+          <li><h3>Local AI</h3><p>AI solutions that run locally, on your own hardware.</p></li>
+          <li><h3>European energy independence</h3><p>Solutions that help Europe become more energy independent.</p></li>
+        </ul>
+        <p class="section-note">More on these projects coming soon.</p>
+      </section>
+      <section class="content-section" aria-labelledby="writing-title">
+        <h2 id="writing-title">Writing</h2>
+        <p>Essays, observations, and updates on work in progress. First entries coming soon.</p>
+        <p>In the meantime, find me on <a href="https://x.com/elysianfields">X</a>.</p>
+      </section>
     </main>
-  </body>
+    <footer class="site-footer"><p>Foster original thinking.<br><span>Conformity is optional.</span></p><div class="footer-links"><a href="https://x.com/elysianfields">X ↗</a><a href="https://github.com/elholg25-hub">GitHub ↗</a><a href="mailto:m.horacek@hey.com">Email ↗</a></div><a class="footer-mark" href="index.html">michh.org</a></footer>
+  </div>
+</body>
 </html>
