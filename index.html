@@ -4,23 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Horacek</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Michael Horacek, builder and operator. Founder of medudoc.com, co-founder of cereneo.ch.">
+    <link rel="canonical" href="https://michh.org/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#1a1b26">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://michh.org/">
+    <meta property="og:title" content="Michael Horacek">
+    <meta property="og:description" content="Michael Horacek, builder and operator. Founder of medudoc.com, co-founder of cereneo.ch.">
+    <meta property="og:image" content="https://michh.org/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@elysianfields">
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <style>
+      @font-face {
+        font-family: Inter;
+        src: url(/fonts/inter-latin.woff2) format("woff2");
+        font-weight: 400 600;
+        font-style: normal;
+        font-display: swap;
+      }
       :root {
-        --fg: #1a1a1a;
-        --muted: #6b6b6b;
-        --bg: #fafaf7;
-        --accent: #0a7d4a;
-        --rule: #e6e4dd;
+        --fg: #c0caf5;
+        --text: #a9b1d6;
+        --bg: #1a1b26;
+        --accent: #9ece6a;
+        --link: #7aa2f7;
+        --rule: #292e42;
+        --muted: #737aa2;
+        color-scheme: dark;
       }
       * { box-sizing: border-box; }
       html, body {
         margin: 0;
         background: var(--bg);
         color: var(--fg);
-        font-family: Inter, Geist, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
         font-size: 16px;
         line-height: 1.65;
         -webkit-font-smoothing: antialiased;
@@ -47,28 +70,30 @@
       }
       p {
         margin: 0 0 1.1em;
-        color: #333;
+        color: var(--text);
         max-width: 65ch;
       }
       .intro p {
         font-size: 1.08rem;
-        color: #2a2a2a;
+        color: var(--fg);
       }
       a {
         color: var(--fg);
         text-decoration: underline;
-        text-decoration-color: var(--accent);
+        text-decoration-color: var(--link);
         text-decoration-thickness: 1.5px;
         text-underline-offset: 3px;
       }
       a:hover { color: var(--accent); }
-      .links {
+      .links ul {
         display: flex;
         flex-wrap: wrap;
         gap: 0.9rem 1.25rem;
         margin: 2.2em 0 0;
+        padding: 0;
+        list-style: none;
       }
-      .links p { margin: 0; }
+      .wip { color: var(--muted); font-size: 0.9em; }
     </style>
   </head>
   <body>
@@ -79,11 +104,17 @@
           <p>Builder. Operator. Working on the next useful thing.</p>
           <p>Foster original thinking. Conformity is optional.</p>
         </div>
-        <div class="links">
-          <p><a href="https://x.com/elysianfields">X</a></p>
-          <p><a href="https://github.com/elholg25-hub">GitHub</a></p>
-          <p><a href="mailto:m.horacek@hey.com">m.horacek@hey.com</a></p>
-        </div>
+        <nav class="links" aria-label="Contact">
+          <ul>
+            <li><a href="https://x.com/elysianfields" rel="me">X</a></li>
+            <li><a href="mailto:m.horacek@hey.com">m.horacek@hey.com</a></li>
+          </ul>
+        </nav>
+
+        <h2>Currently</h2>
+        <p>crafti.ch <span class="wip">— work in progress</span></p>
+        <p>femblom.com <span class="wip">— work in progress</span></p>
+        <p>locai.ai <span class="wip">— work in progress</span></p>
 
         <h2>Previous</h2>
         <p>Founder of <a href="https://medudoc.com/en/">medudoc.com</a></p>
