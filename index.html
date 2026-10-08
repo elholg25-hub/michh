@@ -94,6 +94,7 @@
         list-style: none;
       }
       .wip { color: var(--muted); font-size: 0.9em; }
+      .desc { display: block; color: var(--muted); font-size: 0.9em; line-height: 1.5; }
       .cols {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -122,18 +123,18 @@
         <h2>Currently</h2>
         <div class="cols">
           <div>
-            <p>crafti.ch <span class="wip">— work in progress</span></p>
-            <p>femblom.com <span class="wip">— work in progress</span></p>
-            <p>locai.ai <span class="wip">— work in progress</span></p>
+            <p>crafti.ch <span class="wip">— work in progress</span><span class="desc">Software for craft businesses</span></p>
+            <p>femblom.com <span class="wip">— work in progress</span><span class="desc">Femtech for women in perimenopause</span></p>
+            <p>locai.ai <span class="wip">— work in progress</span><span class="desc">Private AI running locally</span></p>
           </div>
           <div>
-            <p>onpremint.ch <span class="wip">— work in progress</span></p>
+            <p>onpremint.ch <span class="wip">— work in progress</span><span class="desc">On-premise AI for Swiss companies</span></p>
           </div>
         </div>
 
         <h2>Previous</h2>
-        <p>Founder of <a href="https://medudoc.com/en/">medudoc.com</a></p>
-        <p>Co-Founder of <a href="https://cereneo.ch/en/">cereneo.ch</a></p>
+        <p>Founder of <a href="https://medudoc.com/en/">medudoc.com</a><span class="desc">Digital patient education &amp; consent</span></p>
+        <p>Co-Founder of <a href="https://cereneo.ch/en/">cereneo.ch</a><span class="desc">Swiss neurorehabilitation clinic</span></p>
       </div>
     </main>
     <script>
