@@ -107,7 +107,7 @@
         <nav class="links" aria-label="Contact">
           <ul>
             <li><a href="https://x.com/elysianfields" rel="me">X</a></li>
-            <li><a href="mailto:m.horacek@hey.com">m.horacek@hey.com</a></li>
+            <li><a id="email" data-u="kecaroh.m" data-d="moc.yeh">m.horacek [at] hey [dot] com</a></li>
           </ul>
         </nav>
 
@@ -121,5 +121,14 @@
         <p>Co-Founder of <a href="https://cereneo.ch/en/">cereneo.ch</a></p>
       </div>
     </main>
+    <script>
+      (function () {
+        var el = document.getElementById("email");
+        var r = function (s) { return s.split("").reverse().join(""); };
+        var addr = r(el.dataset.u) + "\u0040" + r(el.dataset.d);
+        el.href = "mai" + "lto:" + addr;
+        el.textContent = addr;
+      })();
+    </script>
   </body>
 </html>
