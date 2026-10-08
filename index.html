@@ -94,6 +94,14 @@
         list-style: none;
       }
       .wip { color: var(--muted); font-size: 0.9em; }
+      .cols {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 2rem;
+      }
+      @media (max-width: 640px) {
+        .cols { grid-template-columns: 1fr; }
+      }
     </style>
   </head>
   <body>
@@ -112,9 +120,16 @@
         </nav>
 
         <h2>Currently</h2>
-        <p>crafti.ch <span class="wip">— work in progress</span></p>
-        <p>femblom.com <span class="wip">— work in progress</span></p>
-        <p>locai.ai <span class="wip">— work in progress</span></p>
+        <div class="cols">
+          <div>
+            <p>crafti.ch <span class="wip">— work in progress</span></p>
+            <p>femblom.com <span class="wip">— work in progress</span></p>
+            <p>locai.ai <span class="wip">— work in progress</span></p>
+          </div>
+          <div>
+            <p>onpremint.ch <span class="wip">— work in progress</span></p>
+          </div>
+        </div>
 
         <h2>Previous</h2>
         <p>Founder of <a href="https://medudoc.com/en/">medudoc.com</a></p>
